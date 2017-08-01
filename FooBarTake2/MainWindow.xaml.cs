@@ -49,5 +49,15 @@ namespace FooBarTake2
                 OutputBox.Text += outputString + " \r\n";
             }
         }
+
+        private void FooTextBox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            FooTextBox.Clear();
+        }
+
+        private void BarTextBox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            BarTextBox.Clear();
+        }
     }
 }
